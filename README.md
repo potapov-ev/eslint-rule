@@ -1,35 +1,4 @@
-# eslint-rule
-
-Для подключения правила создать файл `<custom-plugin>.js`
-
-```javascript:
-const rules = require("./rules");
-const plugin = { rules: { "custom-plugin": rules } };
-module.exports = plugin;
-```
-
-`eslint.config.js`
-
-```javascript:
-"use strict";
-
-const eslintPluginExample = require("./custom-plugin");
-
-module.exports = [
-    {
-        files: ["**/*.js"],
-        languageOptions: {
-            sourceType: "commonjs",
-            ecmaVersion: "latest",
-        },
-        // Using the eslint-plugin-example plugin defined locally
-        plugins: {"example": eslintPluginExample},
-        rules: {
-            "example/custom-plugin": "error",
-        },
-    }
-]
-```
+`node ^18.18.0`
 
 Примеры
 
