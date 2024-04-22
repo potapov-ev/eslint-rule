@@ -4,7 +4,7 @@ module.exports = {
   meta: {
       type: "problem",
       docs: {
-          description: "The variable includes characters in addition to the allowed ones"
+          description: "Названия переменных должны состоять из указанных символов - O, 0, I, 1"
       },
       fixable: "code",
       schema: []
@@ -16,7 +16,7 @@ module.exports = {
             if (node.id.type === "Identifier" && isLiteral && !allowedSymbolsReg.test(node.id.name)) {
                 context.report({
                     node,
-                    message: 'The variable includes characters in addition to the allowed ones',
+                    message: 'Названия переменных должны состоять из указанных символов - O, 0, I, 1',
                 });
             }
         }
