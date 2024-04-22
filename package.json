@@ -1,7 +1,7 @@
 {
   "name": "eslint-rule",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "oi10-name-plugin.js",
   "license": "MIT",
   "private": true,
   "devDependencies": {
